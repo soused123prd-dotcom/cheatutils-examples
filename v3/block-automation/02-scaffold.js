@@ -12,3 +12,12 @@ if (math.floor(pos.x) == x && math.floor(pos.y) - 1 == y && math.floor(pos.z) ==
         blockAutomation.useItem("sand");
     }
 }
+/*
+ * Automatický pravý klik každých 40 sekund
+ * Minecraft 1.21+
+ * CheatUtils 3.x
+ */
+
+if (game.getTicks() % 800 == 0) {
+    blockAutomation.useMainHand();
+}
